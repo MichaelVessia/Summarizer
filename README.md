@@ -7,5 +7,5 @@ GitHub Summarize is a Ruby script that will give you a brief GitHub summary of a
 Call the script with
 
 ```
-ruby summary.rb GitHubUsername
+ruby summarizer.rb GitHubUsername
 ```
