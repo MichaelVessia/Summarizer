@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'github_api'
 
 username = ARGV[0]
@@ -10,7 +12,9 @@ max_name_len = max_star_len = max_lang_len = 0
 repos.each { |repo| 
   max_name_len = repo['name'].length if repo['name'].length > max_name_len 
   max_star_len = repo['stargazers_count'].to_s.length if repo['stargazers_count'].to_s.length > max_star_len
-  max_lang_len = repo['language'].length if repo['language'].length > max_lang_len
+  if repo['language']
+    max_lang_len = repo['language'].length if repo['language'].length > max_lang_len
+  end
 }
 
 
