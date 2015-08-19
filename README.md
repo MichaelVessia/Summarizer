@@ -4,8 +4,16 @@ GitHub Summarize is a Ruby script that will give you a brief GitHub summary of a
 
 ##Basic Usage
 
-Call the script with
+Install the gem with:
+```
+gem install github_summarizer
+```
+Then call:
 
 ```
-ruby summarizer.rb GitHubUsername
+github_summarizer $USERNAME
 ```
+
+## License
+
+MIT © [Michael Vessia](http://vessia.net)
