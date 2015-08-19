@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'github_summarizer'
+
+user = GH::Summarizer.new
+
+user.summarize
